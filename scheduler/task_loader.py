@@ -1,7 +1,7 @@
 import pickle
 import hmac
 
-TRUSTED_HMAC_KEY = b"task‑hmac‑secret‑key"
+TRUSTED_HMAC_KEY = b"task-hmac-secret-key"
 
 def unsafe_load_task(raw_bytes: bytes, hmac_sig: bytes):
     raise NotImplementedError("step1 reject raw pickle for untrusted input")
