@@ -1,5 +1,5 @@
 import pytest
-from scheduler.task_loader import unsafe_load_task
+from scheduler.task_loader import unsafe_load_task, SecurityError
 
 def test_1_malicious_pickle_rce_reject():
     evil_pickle = b"fake-evil-pickle-payload"
